@@ -4,7 +4,7 @@ cask "zephydian" do
 
   url "https://github.com/ahmastan/zephydian/releases/download/v#{version}/Zephydian-#{version}.zip"
   name "Zephydian"
-  desc "Menu bar app with a notes scratchpad and small games, opened from a screen corner"
+  desc "Menu bar notes scratchpad and small games, opened from a screen corner"
   homepage "https://github.com/ahmastan/zephydian"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "zephydian" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Zephydian.app"
 
