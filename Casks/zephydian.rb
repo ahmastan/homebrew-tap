@@ -4,7 +4,7 @@ cask "zephydian" do
 
   url "https://github.com/ahmastan/zephydian/releases/download/v#{version}/Zephydian-#{version}.zip"
   name "Zephydian"
-  desc "Menu bar notes scratchpad and small games, opened from a screen corner"
+  desc "Utility and gaming corner, with more utilities coming soon"
   homepage "https://github.com/ahmastan/zephydian"
 
   livecheck do
