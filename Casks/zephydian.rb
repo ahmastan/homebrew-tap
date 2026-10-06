@@ -20,11 +20,16 @@ cask "zephydian" do
 
   zap trash: [
     "~/Library/Application Scripts/com.ahmastan.zephydian",
+    "~/Library/Application Support/Zephydian",
     "~/Library/Containers/com.ahmastan.zephydian",
+    "~/Library/Preferences/com.ahmastan.zephydian.plist",
   ]
 
   caveats <<~EOS
     Zephydian isn't signed with an Apple Developer ID yet, so macOS blocks the first launch.
     To open it, try once, then go to System Settings > Privacy & Security and click "Open Anyway".
+
+    Features you switch on may ask for macOS permissions such as Accessibility. Until Zephydian is
+    signed, macOS can forget them after an update: use Settings > Permissions > Repair in Zephydian.
   EOS
 end
